@@ -84,4 +84,10 @@ int8_t signal_tune[] = {
 };
 #endif // SIGNAL_TUNE_KIM_POSSIBLE
 
+#ifdef SIGNAL_TUNE_24
+int8_t signal_tune[] = {
+    0
+};
+#endif // SIGNAL_TUNE_24
+
 #endif // MOVEMENT_CUSTOM_SIGNAL_TUNES_H_
