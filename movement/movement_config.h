@@ -30,12 +30,21 @@
 const watch_face_t watch_faces[] = {
     simple_clock_face,
     world_clock_face,
+    alarm_face,
+    stock_stopwatch_face,
+    countdown_face,
+    nanosec_face,
+    finetune_face,
+    set_time_face,
+    preferences_face,
+    //(9)
+    voltage_face,
+    sailing_face,
     sunrise_sunset_face,
     moon_phase_face,
-    stopwatch_face,
     thermistor_readout_face,
-    preferences_face,
-    set_time_face,
+    thermistor_logging_face,
+    blinky_face
 };
 
 #define MOVEMENT_NUM_FACES (sizeof(watch_faces) / sizeof(watch_face_t))
@@ -45,7 +54,7 @@ const watch_face_t watch_faces[] = {
  * excludes these faces from the normal rotation.
  * Usually it makes sense to set this to the preferences face.
  */
-#define MOVEMENT_SECONDARY_FACE_INDEX 0 // or (MOVEMENT_NUM_FACES - 2)
+#define MOVEMENT_SECONDARY_FACE_INDEX 9 // or (MOVEMENT_NUM_FACES - 2)
 
 /* Custom hourly chime tune. Check movement_custom_signal_tunes.h for options */
 #define SIGNAL_TUNE_DEFAULT
