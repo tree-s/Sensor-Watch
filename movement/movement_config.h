@@ -38,8 +38,8 @@ const watch_face_t watch_faces[] = {
     set_time_face,
     preferences_face,
     //(9)
+    probability_face,
     voltage_face,
-    sailing_face,
     sunrise_sunset_face,
     moon_phase_face,
     thermistor_readout_face,
